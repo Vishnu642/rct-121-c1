@@ -38,12 +38,10 @@ function App() {
     <div className="App">
       <div>
        {loading && <div  id="loading-container">...Loading</div>}
-        {/* <Button id="SORT_BUTTON" handleclick={setSalarySort("DESC")}  title={`Sort by Ascending Salary`} />
+         <Button id="SORT_BUTTON" handleclick={setSalarySort("DESC")}  title={`Sort by Ascending Salary`} />
         <Button title="PREV" onClick={()=>setPage(page-1)}  id="PREV" />
-        <Button id="NEXT" onClick={()=>setPage(page+1)} title="NEXT" /> */}
-        <button id={id} onClick={()=>setSalarySort("DESC")} data-testid="button-component" className={styles.button}>
-      {title}
-    </button>
+        <Button id="NEXT" onClick={()=>setPage(page+1)} title="NEXT" /> 
+        
   
       </div>
       {data.map((item) => (
